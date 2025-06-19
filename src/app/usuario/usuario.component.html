@@ -1,6 +1,8 @@
 <div>
   <button (click)="alSeleccionarUsuario()" class="usuario-seleccionado">
-    <img [src]="rutaImagen()" [alt]="usuarioSeleccionado().nombre" />
-    <span>{{usuarioSeleccionado().nombre}}</span>
+    <!-- Esto es una interpolacion de atributos -->
+    <img [src]="(rutaImagen)" [alt]="nombre" />
+    <!-- Esto es interpolacion de caracteres  -->
+    <span>{{nombre}}</span>
   </button>
 </div>
